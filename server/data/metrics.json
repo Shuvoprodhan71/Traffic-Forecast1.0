@@ -1,0 +1,28 @@
+{
+  "dataset": {
+    "name": "METR-LA",
+    "sensors": 207,
+    "records": 16212,
+    "location": "Los Angeles, CA",
+    "period": "Mar\u2013Jun 2012",
+    "mean_speed_mph": 58.34,
+    "std_speed_mph": 5.33,
+    "missing_pct": 9.15
+  },
+  "models": {
+    "random_forest": {
+      "name": "Random Forest",
+      "mae_mph": 0.0883,
+      "rmse_mph": 0.149,
+      "n_estimators": 300,
+      "max_depth": "Unlimited"
+    },
+    "lstm": {
+      "name": "LSTM",
+      "mae_mph": 1.1924,
+      "rmse_mph": 1.4882,
+      "seq_len": 12,
+      "epochs": 50
+    }
+  }
+}
